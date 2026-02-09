@@ -1,0 +1,30 @@
+<div class="vale-home-container pa-4 ux-fade-in-up">
+  <mat-card class="w-100">
+    <mat-card-content class="vale-home-content">
+      <div class="gif-wrapper">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExenpuY2o4N3Y2eTI3aDd2a285bXFlYzdwdncyODh0ZHR4Mzd4YW5qayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DtBHcARLqNAvVnYsyD/giphy.gif" alt="Welcome" class="gif-image w-100" />
+      </div>
+
+      <div class="question-block">
+        <h2 class="section-title">Do you want to play my Valentines Day Quiz?</h2>
+      </div>
+
+      <div class="button-row">
+        <button
+          class="vale-button-primary vale-button"
+          (click)="onYes()"
+        >
+          Yes
+        </button>
+        <button
+          id="NoBtn"
+          class="vale-button-secondary vale-button"
+          (click)="onNo()"
+          [style.transform]="noButtonTransform"
+        >
+          No
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

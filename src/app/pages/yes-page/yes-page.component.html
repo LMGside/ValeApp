@@ -1,0 +1,31 @@
+<div class="vale-home-container pa-4 ux-fade-in-up">
+  <mat-card class="w-100">
+    <mat-card-content class="vale-home-content">
+      <div class="gif-wrapper">
+        <img
+        [src]="gifSrcs[gifIndex]" alt="Welcome" class="gif-image w-100" />
+      </div>
+
+      <div class="question-block">
+        <h2 class="section-title">Will you ever speak to me again?</h2>
+      </div>
+
+      <div class="button-row">
+        <button
+          class="vale-button-primary vale-button"
+          (click)="onYes()"
+          [style.fontSize] = "yesButtonScale + 'em'"
+        >
+          Yes
+        </button>
+        <button
+          class="vale-button-secondary vale-button"
+          (click)="onNo()"
+          [style.transform]="noButtonTransform"
+        >
+          {{this.noBtnText}}
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
